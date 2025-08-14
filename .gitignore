@@ -1,207 +1,488 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[codz]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-#poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-#pdm.lock
-#pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-#pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.envrc
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
-
-# Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
-.abstra/
-
-# Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
-
-# Ruff stuff:
-.ruff_cache/
-
-# PyPI configuration file
-.pypirc
-
-# Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore
-.cursorindexingignore
-
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+import tkinter as tk 
+from tkinter import messagebox 
+ 
+quiz_setquestion = { 
+   "MATHEMATICS": [ 
+       {"Question": "How many side does a TRIANGLE have?", 
+"Options": ["2", "3", "5"], "Answer": "3", 
+        "Image": 
+r"C:\Users\saras\Downloads\Webp.net-resizeimage.png"}, 
+       {"Question": "What is 5+4?", "Options": ["11", "7", "9"], 
+"Answer": "9"}, 
+       {"Question": "What comes after 10?", "Options": ["Eleven", 
+"Nine", "Thirteen"], "Answer": "Eleven"}, 
+       {"Question": "Which number is greater? 4 or 7?", "Options": 
+["4", "7", "4=7"], "Answer": "7"}, 
+       {"Question": "What is 7-3?", "Options": ["5", "2", "4"], 
+"Answer": "4"}, 
+       {"Question": "How many fingers are there on ONE hand?", 
+"Options": ["5", "10", "6"], "Answer": "5", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(1).png"}, 
+       {"Question": "Which shape has 4 sides of the same length?", 
+"Options": ["Circle", "Square", "Triangle"], "Answer": "Square", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(2).png"}, 
+       {"Question": "Which is an even number?", "Options": ["7", 
+"9", "8"], "Answer": "8"}, 
+       {"Question": "How many months are there in a year?", 
+"Options": ["12", "10", "14"], "Answer": "12", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(3).png"}, 
+       {"Question": "How many legs does a spider have?", 
+"Options": ["6", "8", "12"], "Answer":"8", 
+        "Image": 
+r"C:\Users\saras\Downloads\Webp.net-resizeimage__4_-removebg-previ
+ ew.png"} 
+   ], 
+   "VEGETABLES & FRUITS": [ 
+       {"Question": "What color is banana?", "Options": ["Red", 
+"Yellow", "Green"], "Answer": "Yellow", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(4).png"}, 
+       {"Question": "Which vegetable is orange and long?", 
+"Options": ["Carrot", "Potato", "Broccoli"], "Answer": "Carrot", 
+6 
+ 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(15).png"}, 
+       {"Question": "Which fruit is yellow and sour?", "Options": 
+["Lemon", "Strawberry", "Grapes"], "Answer": "Lemon", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(16).png"}, 
+       {"Question": "Which vegetable is green and has a tree-like 
+shape?", "Options": ["Broccoli", "Tomato", "Potato"], "Answer": 
+"Broccoli", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(17).png"}, 
+       {"Question": "Which fruit is small, round and blue?", 
+"Options": ["Orange", "Strawberry", "Blueberry"], "Answer": 
+"Blueberry", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(18).png"}, 
+       {"Question": "Which vegetable is green and leafy?", 
+"Options": ["Cucumber", "Spinach", "Carrot"], "Answer": "Spinach", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(19).png"}, 
+       {"Question": "Which fruit is big, green outside and red 
+inside with black seeds?", "Options": ["Papaya", "Strawberry", 
+"Watermelon"], "Answer": "Watermelon", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(20).png"}, 
+       {"Question": "Which vegetable is green or red and spicy?", 
+"Options": ["Cucumber", "Spinach", "Chili"], "Answer": "Chili", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(21).png"}, 
+       {"Question": "Which vegetable is red and often used in 
+salads?", "Options": ["Onion", "Tomato", "Pepper"], "Answer": 
+"Tomato", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(22).png"}, 
+       {"Question": "Which fruit is green outside, yellow inside 
+and spiky?", "Options": ["Durian", "Kiwi", "Pineapple"], 
+"Answer":"Durian", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(23).png"} 
+   ], 
+   "ANIMALS": [ 
+       {"Question": "What sound does a cow make?", "Options": 
+["Meow", "Mooo", "Quack-quack"], "Answer":"Mooo", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(5).png"}, 
+       {"Question": "Which animal is known as the King of the 
+Jungle?", "Options": ["Tiger", "Lion", "Hippopotamus"], "Answer": 
+"Lion", 
+7 
+ 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(6).png"}, 
+       {"Question": "What is largest land animal?", "Options": 
+["Elephant", "Cow", "Rhinoceros"], "Answer": "Elephant", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(7).png"}, 
+       {"Question": "What animal having a long neck?", "Options": 
+["Zebra", "Kangaroo", "Giraffe"], "Answer": "Giraffe", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(8).png"}, 
+       {"Question": "What animal love to eat bamboo?", "Options": 
+["Panda", "Binturong", "Koala"], "Answer": "Panda", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(9).png"}, 
+       {"Question": "Which bird can swim but can't fly?", 
+"Options": ["Eagle", "Penguin", "Parrot"], "Answer": "Penguin", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(10).png"}, 
+       {"Question": "Which animal is known for its ability to jum 
+high?", "Options": ["Tiger", "Penguin", "Kangaroo"], "Answer": 
+"Kangaroo", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(11).png"}, 
+       {"Question": "Which animal is known for having a black and 
+white striped pattern?", "Options": ["Zebra", "Lion", "Leopard"], 
+"Answer": "Zebra", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(12).png"}, 
+       {"Question": "Which animal is the fastest land animal?", 
+"Options": ["Rhinoceros", "Cheetah", "Rabbit"], "Answer": 
+"Cheetah", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(13).png"}, 
+       {"Question": "Which animal has a shell and moves slowly?", 
+"Options": ["Cat", "Penguin", "Turtle"], "Answer":"Turtle", 
+        "Image": r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(14).png"} 
+   ] 
+} 
+ 
+#define variables 
+currentTopic = None 
+currentQuestion = 0 
+Scores = 0 
+timer_id=None 
+ 
+#Create topic buttons using function 
+def topic_selected(topic): 
+8 
+ 
+   global currentTopic, currentQuestion, Scores 
+   currentTopic = topic 
+   currentQuestion = 0 
+   Scores = 0 
+   window2.pack_forget() ##hide window 2 
+   window3.pack(fill="both", expand=True)  ##Show window3 
+   load_question() 
+ 
+def check_answer(selected_option): 
+   global currentQuestion, Scores, timer_id 
+   if timer_id: 
+       window3.after_cancel(timer_id) 
+       timer_id= None 
+ 
+   question_data = quiz_setquestion[currentTopic][currentQuestion] 
+   correct_answer = question_data["Answer"] 
+   for btn in option_btn: 
+       if btn['text'] == question_data["Answer"]: 
+           btn.config(bg='green') 
+       elif btn['text'] == selected_option: 
+           btn.config(bg='red') 
+ 
+   if selected_option == question_data["Answer"]: 
+       Scores+=1 
+       feedback = "Correct!! Keep going!" 
+   else: 
+       feedback = f"Wrong! The correct answer was 
+{correct_answer}" 
+   window3.after(1500, lambda : 
+proceed_to_next_question(feedback)) 
+ 
+def proceed_to_next_question(feedback): 
+   # Show feedback message and reset buttons 
+   messagebox.showinfo("Feedback", feedback) 
+   reset_buttons() 
+ 
+def reset_buttons(): 
+   # Reset the button colors to their default state 
+   for btn in option_btn: 
+       btn.config(bg="#520E7D")  # Default button color 
+ 
+   # Load the next question or end the quiz if it's the last 
+question 
+   global currentQuestion 
+   currentQuestion += 1 
+   if currentQuestion < len(quiz_setquestion[currentTopic]): 
+       load_question() 
+   else: 
+9 
+ 
+       end_quiz() 
+ 
+def end_quiz(): 
+   global timer_id 
+   if timer_id: 
+       window3.after_cancel(timer_id) 
+       timer_id = None 
+   window3.pack_forget() 
+   score_label.config(text=f"YOUR SCORE ARE 
+{Scores}/{len(quiz_setquestion[currentTopic])}!", font=("Comic 
+Sans MS", 45, "bold")) 
+   window4.pack(fill="both", expand=True) 
+ 
+ 
+def countdown(time_left): 
+   global timer_id 
+   timer_label.config(text=f"Time left: {time_left} seconds") 
+   if time_left > 0: 
+       timer_id = window3.after(1000, countdown, time_left - 1) 
+   else: 
+       messagebox.showinfo("Time's Up!", "You ran out of time for 
+this question!") 
+       skip_question() 
+ 
+def skip_question(): 
+   global currentQuestion, timer_id 
+   if timer_id: 
+       window3.after_cancel(timer_id) 
+       timer_id=None 
+   currentQuestion+=1 
+   if currentQuestion<len(quiz_setquestion[currentTopic]): 
+       load_question() 
+   else: 
+       end_quiz() 
+ 
+def load_question(): 
+   global currentQuestion, timer_id 
+   #TIMER SETTING 
+   if timer_id: 
+       window3.after_cancel(timer_id) 
+       timer_id=None 
+ 
+   question_data = quiz_setquestion[currentTopic][currentQuestion] 
+   timer_duration = question_data.get("Timer", 20) 
+   #Update question number 
+   question_number_label.config( 
+       text=f"Question {currentQuestion + 1} " 
+   ) 
+10 
+ 
+   #Update if image available 
+   image_path= question_data.get("Image") 
+   if image_path: 
+       try: 
+           img= tk.PhotoImage(file=image_path) 
+           image_label.config(image=img) 
+           image_label.image=img 
+       except Exception as e: 
+           print(f"Error loading image: {e}") 
+           image_label.config(image=None) 
+           image_label.image = None 
+   else: 
+       image_label.config(image=None) 
+       image_label.image=None 
+   #Update question text 
+   question_label.config(text=question_data["Question"]) 
+   #update options 
+   for i, option in enumerate(question_data["Options"]): 
+       option_btn[i].config(text=option, 
+                            command=lambda opt=option: 
+check_answer(opt)) 
+   countdown(timer_duration) 
+ 
+##welcome window (window1) 
+window = tk.Tk() 
+window.title("Fun Quiz for Kids!") 
+window.state('zoomed') 
+window.config(bg="#C0c0c0") 
+ 
+#create a frame 
+window1 = tk.Frame(window) 
+window1.pack(fill="both", expand=True) 
+ 
+#background image 
+background_image= 
+tk.PhotoImage(file=r"C:\Users\saras\Downloads\Untitled design 
+(4).png") 
+bg_label = tk.Label( 
+   window1, 
+   image=background_image 
+) 
+bg_label.place(relwidth=1, relheight=1) 
+ 
+#first window (WINDOW 1) 
+first_window=tk.Label( 
+   window1, 
+   text="WELCOME TO FUN QUIZ!", 
+   fg="#520E7D", 
+11 
+ 
+   bg="#C0c0c0", 
+   font=("Cooper Black", 60, "bold"), 
+   width=20, 
+   height=1 
+) 
+first_window.place(relx=0.5, rely=0.45, anchor="center") 
+ 
+#Function transition to the next screen 
+def show_window2(): 
+   window1.pack_forget() 
+   window2.pack(fill="both", expand=True) 
+ 
+#button to next window 
+start_button = tk.Button( 
+   window1, 
+   text="START", 
+   font=("Comic Sans MS", 30, "bold"), 
+   fg="white", 
+   bg="#520E7D", 
+   command=show_window2 
+) 
+start_button.place(relx=0.5, rely=0.6, anchor="center") 
+ 
+#entering second window (WINDOW 2) 
+window2= tk.Frame(window) 
+window2.config(bg="#C0c0c0") 
+ 
+#background window2 
+background_image2= 
+tk.PhotoImage(file=r"C:\Users\saras\Downloads\Untitled design 
+(3).png") 
+bg2_label = tk.Label( 
+   window2, 
+   image=background_image2 
+) 
+bg2_label.place(relwidth=1, relheight=1) 
+ 
+#Label for multiple topics 
+topic_label= tk.Label( 
+   window2, 
+   text="CHOOSE A TOPIC!", 
+   font=("Cooper Black", 50), 
+   fg = "#520E7D", 
+   bg = "#C0c0c0" 
+) 
+topic_label.pack(pady=50) 
+ 
+ 
+12 
+ 
+#Button of multiple topics 
+for topic in quiz_setquestion.keys(): 
+   topics_button = tk.Button( 
+       window2, 
+       text=topic, 
+       font=("Comic Sans MS", 20), 
+       fg="gold", 
+       bg="#520E7D", 
+       command=lambda t=topic: topic_selected(t)  # Pass the topic 
+to the function 
+   ) 
+   topics_button.pack(pady=10)  # Arrange buttons in a horizontal 
+line 
+ 
+#Button to go back to welcome screen 
+back_button = tk.Button( 
+   window2, 
+   text="BACK", 
+   font=("Comic Sans MS", 20, "bold"), 
+   fg="white", 
+   bg="#520E7D", 
+   command=lambda: [window2.pack_forget(), 
+window1.pack(fill="both", expand=True)] 
+) 
+back_button.place(relx=0.07, rely=0.9, anchor="center") 
+ 
+#Question window (WINDOW 3) 
+window3= tk.Frame(window) 
+window3.config(bg="#C0c0c0") 
+ 
+image_label = tk.Label( 
+   window3, 
+   bg="#C0c0c0" 
+) 
+image_label.pack(pady=(20, 10)) 
+ 
+question_label = tk.Label( 
+   window3, 
+   text="", 
+   font=("Comic Sans MS",30, "bold"), 
+   fg="#520E7D", 
+   bg= "#C0c0c0", 
+   wraplength=500 
+) 
+question_label.pack(pady=(10, 20)) 
+ 
+# Add a label to display question number in the left corner 
+question_number_label = tk.Label( 
+13 
+ 
+   window3, 
+   text="", 
+   font=("Comic Sans MS", 30, "bold"), 
+   fg="#520E7D", 
+   bg="#C0c0c0" 
+) 
+question_number_label.place(relx=0.05, rely=0.1, anchor="w") 
+ 
+option_btn = [ 
+   tk.Button(window3, 
+             font=("Comic Sans MS", 27), 
+             fg="white", 
+             bg="#520E7D", 
+             width=20) for _ in range (3) 
+] 
+for btn in option_btn: 
+   btn.pack(pady=10) 
+ 
+timer_label = tk.Label( 
+   window3, 
+   text="Time left: 10 seconds", 
+   font=("Comic Sans MS", 25, "bold"), 
+   fg="#520E7D", 
+   bg="#C0c0c0" 
+) 
+timer_label.place(relx=0.76, rely=0.92) 
+ 
+ 
+ 
+#WINDOW 4 
+window4=tk.Frame(window, bg="#C0c0c0") 
+backgroundlast_image= 
+tk.PhotoImage(file=r"C:\Users\saras\Downloads\Untitled design 
+(6).png") 
+bg3_label = tk.Label( 
+   window4, 
+   image=backgroundlast_image 
+) 
+bg3_label.place(relwidth=1, relheight=1) 
+ 
+score_label = tk.Label(window4, 
+                      font=("Comic Sans MS", 45, "bold"), 
+                      fg="#520E7D", 
+                      bg="#C0c0c0" 
+) 
+score_label.place(relx=0.5, rely=0.5, anchor="center") 
+ 
+14 
+ 
+# Display an animated background (like confetti or fireworks) or a 
+fun image 
+confetti_image = 
+tk.PhotoImage(file=r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(24).png") 
+confetti_label = tk.Label( 
+   window4, 
+   image=confetti_image, 
+   bg="#C0c0c0" 
+) 
+confetti_label.place(relx=0.15, rely=0.6, anchor="center") 
+ 
+trophy_image = 
+tk.PhotoImage(file=r"C:\Users\saras\Downloads\Webp.net-resizeimage 
+(25).png") 
+trophy_label = tk.Label( 
+   window4, 
+   image=trophy_image, 
+   bg="#C0c0c0" 
+) 
+trophy_label.place(relx=0.8, rely=0.5, anchor="center") 
+ 
+replay_btn=tk.Button( 
+   window4, 
+   text="REPLAY", 
+   font=("Comic Sans MS", 16, "bold"), 
+   bg="#520E7D", 
+   fg="white", 
+   command = lambda: (window4.pack_forget(), 
+window2.pack(fill="both", expand=True)) 
+) 
+replay_btn.place(relx=0.06, rely=0.9, anchor="center") 
+ 
+exit_btn= tk.Button( 
+   window4, 
+   text= "EXIT", 
+   font=("Comic Sans MS", 16, "bold"), 
+   bg="#520E7D", 
+   fg="white", 
+   command=window.destroy #this will clos the application 
+) 
+exit_btn.place(relx=0.94, rely=0.9, anchor="center") 
+window.mainloop(
